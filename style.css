@@ -1,0 +1,279 @@
+*
+{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#overlay
+{
+    padding:0;
+    margin: 300px 200px 500px 100px;
+    background-color: transparent;
+    font-size: 40px;
+    color:black;
+    font:italic;
+    position: relative;
+    animation: swing 10s linear ;
+    animation-duration: 1s;
+}
+@-webkit-keyframes swing
+{
+    20% {
+        -webkit-transform: rotate3d(0, 0, 1, 15deg);
+        transform: rotate3d(0, 0, 1, 15deg);
+      }
+    
+      40% {
+        -webkit-transform: rotate3d(0, 0, 1, -10deg);
+        transform: rotate3d(0, 0, 1, -10deg);
+      }
+    
+      60% {
+        -webkit-transform: rotate3d(0, 0, 1, 5deg);
+        transform: rotate3d(0, 0, 1, 5deg);
+      }
+    
+      80% {
+        -webkit-transform: rotate3d(0, 0, 1, -5deg);
+        transform: rotate3d(0, 0, 1, -5deg);
+      }
+    
+      to {
+        -webkit-transform: rotate3d(0, 0, 1, 0deg);
+        transform: rotate3d(0, 0, 1, 0deg);
+      }
+} 
+
+@keyframes swing {
+    20% {
+      -webkit-transform: rotate3d(0, 0, 1, 15deg);
+      transform: rotate3d(0, 0, 1, 15deg);
+    }
+  
+    40% {
+      -webkit-transform: rotate3d(0, 0, 1, -10deg);
+      transform: rotate3d(0, 0, 1, -10deg);
+    }
+  
+    60% {
+      -webkit-transform: rotate3d(0, 0, 1, 5deg);
+      transform: rotate3d(0, 0, 1, 5deg);
+    }
+  
+    80% {
+      -webkit-transform: rotate3d(0, 0, 1, -5deg);
+      transform: rotate3d(0, 0, 1, -5deg);
+    }
+  
+    to {
+      -webkit-transform: rotate3d(0, 0, 1, 0deg);
+      transform: rotate3d(0, 0, 1, 0deg);
+    }
+  }
+  
+  .swing {
+    -webkit-transform-origin: top center;
+    transform-origin: top center;
+    -webkit-animation-name: swing;
+    animation-name: swing;
+  }  
+
+#panel
+{
+    width:100%;
+    border: solid black;
+    padding:0; 
+    background-color:transparent;
+    background-image:url('https://images.pexels.com/photos/7095/people-coffee-notes-tea.jpg?cs=srgb&dl=business-conference-learning-7095.jpg&fm=jpg');
+   background-image: 100%;
+   background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.container {
+    
+    width: 100%;
+    max-width: 80%;
+    margin:0 500px 0 1000px;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+}
+
+.container .btn {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    right:100%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color:black;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    color: white;
+    font-size: 50px;
+    font:italic;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+.container1 {
+    
+    width: 100%;
+    max-width: 80%;
+    margin:0 500px 0 1000px;
+}
+
+.container1 img {
+    width: 100%;
+    height: auto;
+}
+
+.container1 .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right:50%;
+    background-color:black;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    color: white;
+    font-size: 5px;
+    font:italic;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+#menu
+{
+
+    position: fixed;
+    margin:0 0 0 0;
+    left:0;
+    right:0;
+    width:100%;
+    padding:5px 50px 30px;
+    background-color:#555;
+    opacity: 0.4;
+    filter: alpha(opacity=50);
+
+}
+#menu:hover
+{
+    background-color:transparent;
+}
+  
+.menu-item
+{
+    display: inline-block;
+    padding: 50px 20px 0 100px;
+    text-align: center;
+    transition: all 0.3s ease;
+    background:transparent;
+    color:white;
+    font-size: 30px;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    transition: all 0.2s linear;
+    border-radius: 5px;
+    border:50px,0,0,0;
+}
+.menu-item:hover
+{
+    cursor:pointer;
+    color: rgba(0, 170, 210, 0.6);
+    border-width: 1px;
+   
+}
+.dropbtn {
+    background-color:transparent;
+    color: white;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    padding: 10px 0 0;
+
+    font-size: 30px;
+    border: none;
+}
+.dropbtn:hover
+{
+    cursor:pointer;
+    color: rgba(0, 170, 210, 0.6);
+    border-width: 1px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    
+    font-size:30px; 
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color:transparent;}
+
+.icon-bar 
+{   
+    position: relative;
+    left: 0;
+    width: 90px;
+    background-color: #555;
+}
+
+.icon-bar a 
+{
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 36px;
+}
+
+.icon-bar a:hover 
+{
+    background-color: #000;
+}
+
+.active 
+{
+    background-color: #4CAF50;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
